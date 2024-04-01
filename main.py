@@ -20,10 +20,6 @@ def ytb_download(uid, url, json_info, output_dir="ytb_videos/"):
                 "key": "FFmpegVideoConvertor",
                 "preferedformat": "mp4",  # Convert video to mp4 format
             },
-            {
-                "key": "FFmpegVideoResizer",
-                "args": ["-vf", "scale='min(512,iw)':min'(512,ih)':force_original_aspect_ratio=decrease"],
-            },
         ],
     }
 
